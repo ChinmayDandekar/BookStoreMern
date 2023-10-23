@@ -1,0 +1,11 @@
+Server Side:
+
+    1:  npm init -y
+    2:  install express nodemon
+    3:  setup start scripts 
+        create config file for storing imporatant global variables and database keys
+    4:  setup express
+    5:  connect db using mongoose lib
+    6:  make separate folders for models and there routes
+    7:  add middleware support for cors and json parsing
+    8
