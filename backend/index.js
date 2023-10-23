@@ -1,4 +1,4 @@
-import express from 'express';
+import express, { response } from 'express';
 import cors from 'cors';
 import { PORT, mongoDBURL } from "./config.js"
 import booksRoute from './routes/booksRoute.js';
@@ -20,6 +20,10 @@ app.use(cors());
 //     methods: ['GET', 'POST', 'PUT', 'DELETE'],
 //     allowedHeaders: ['Content-Type'],
 // }));
+
+app.get("/", (request, response) => {
+    response.json("Hello")
+})
 
 app.get('/', (request, response) => {
     console.log(request);
